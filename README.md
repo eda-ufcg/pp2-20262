@@ -45,19 +45,27 @@ este método remove o valor que está no índice `index`. Lembre-se que LinkedLi
 
 ## Entregando a prova
 
-> Passo 0. Modifique o arquivo README. Coloque seu nome, email @ccc e matrícula nos lugares indicados. Se você não fizer isso, não considero que sua prova foi assinada e, portanto, não vou corrigir. Não mude a formatação da linha. Apenas inclua seus dados.
+### Passo 0
 
-> Passo 1. Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos acima (`javac` e `java -ea`).
+> Modifique o arquivo README. Coloque seu nome, email @ccc e matrícula nos lugares indicados. Se você não fizer isso, não considero que sua prova foi assinada e, portanto, não vou corrigir. Não mude a formatação da linha. Apenas inclua seus dados.
+
+### Passo 1 
+
+> Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos acima (`javac` e `java -ea`).
 
 > ⚠️ **Importante:** Os comandos abaixo devem ser executados no **diretório pai** do projeto, ou seja, no diretório anterior ao diretório `pp2-20262/`.
 
-> Passo 2. Gere o arquivo compactado da sua solução:
+### Passo 2
+
+> Gere o arquivo compactado da sua solução:
 
 ```bash
 tar zcvf nome-sobrenome-matricula.tar.gz pp2-20262/
 ```
 
-> Passo 3. Confira se o tar foi gerado corretamente, listando os arquivos que estão dentro dele (sem extrair):
+### Passo 3
+
+> Confira se o tar foi gerado corretamente, listando os arquivos que estão dentro dele (sem extrair):
 
 ```bash
 tar tzvf nome-sobrenome-matricula.tar.gz
@@ -65,7 +73,9 @@ tar tzvf nome-sobrenome-matricula.tar.gz
 
 > Confira se a listagem mostra o diretório `pp2-20262/` com todo o seu conteúdo (README.md, src/, etc). Se a lista vier vazia ou incompleta, o arquivo foi gerado errado e sua prova não será corrigida.
 
-> Passo 4. Submeta sua solução:
+### Passo 4
+
+> Submeta sua solução:
 
 ```bash
 bash pp2-20262/submit-answer.sh pp2 nome-sobrenome-matricula.tar.gz
