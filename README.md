@@ -53,9 +53,9 @@ este método remove o valor que está no índice `index`. Lembre-se que LinkedLi
 
 > Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos acima (`javac` e `java -ea`).
 
-> ⚠️ **Importante:** Os comandos abaixo devem ser executados no **diretório pai** do projeto, ou seja, no diretório anterior ao diretório `pp2-20262/`.
-
 ### Passo 2
+
+⚠️ **Importante:** Os comandos abaixo devem ser executados no **diretório pai** do projeto, ou seja, no diretório anterior ao diretório `pp2-20262/`.
 
 > Gere o arquivo compactado da sua solução:
 
