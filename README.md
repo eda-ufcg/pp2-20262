@@ -8,69 +8,74 @@
 
 ## O template
 
-> Não altere o arquivo build.gradle
-
 > O código java estará (ou você terá que colocar) no diretório **/src/main/java/**
-
-> Os testes estarão (ou você terá que incluir) no diretório **/src/test/java/**
 
 > Não mude nenhuma assinatura de método, nome de classe ou localização dos arquivos. Mas você pode/deve criar outros métodos e classes, desde que passem nos testes.
 
-> Compilando: `gradle compileJava` na raiz do projeto
+### Compilando
 
-> Executando os testes: `gradle test` na raiz do projeto
+Execute o comando abaixo a partir da raiz do repositório:
+
+```bash
+javac src/main/java/*.java
+```
+
+### Executando os testes públicos
+
+Depois de compilar, execute:
+
+```bash
+java -ea -cp src/main/java Asserts
+```
+
+> A opção `-ea` habilita os `asserts` usados nos testes.
 
 
 ## A Prova
 
-### remove(int index) em ArrayList (2,5)
+### remove(int index) em ArrayList (5,0)
 
 Implemente o método `public void remove(int index)` na classe ArrayList. Dada uma lista, 
 este método remove o valor que está no índice `index`. Você vai precisar implementar um método auxiliar `shiftLeft` para ajustar a lista depois da remoção.
 
-### remove(int index) em LinkedList (2,5)
+### remove(int index) em LinkedList (5,0)
 
 Implemente o método `public void remove(int index)` na classe LinkedList. Dada uma lista, 
 este método remove o valor que está no índice `index`. Lembre-se que LinkedList não é implementada por array, então você vai precisar iterar até a posição que deseja remover.
-
-
-### 
-
-
-### Teoria
-
-* (1.0) Quais as principais diferenças entre ArrayList e LinkedList?
-
-  ```diff
-  - INSIRA SUA RESPOSTA AQUI
-  ```
-
-* (2.0) Escreva em pseudocódigo (não precisa se preocupar com detalhes de Java) o método `boolean contains(int key)` da classe HashMap, cuja estratégia de resolução de colisão é feita por endereçamento aberto com sondagem linear. 
-  ```diff
-  - INSIRA SUA RESPOSTA AQUI
-  ```
-
-*  (2.0) No pior caso, qual será a classe de complexidade do método que você implementou? Quais estratégias são utilizadas para garantir uma alta probabilidade de não cair nesse caso?
-
-  ```diff
-  - INSIRA SUA RESPOSTA AQUI
-  ```
 
 ## Entregando a prova
 
 > Passo 0. Modifique o arquivo README. Coloque seu nome, email @ccc e matrícula nos lugares indicados. Se você não fizer isso, não considero que sua prova foi assinada e, portanto, não vou corrigir. Não mude a formatação da linha. Apenas inclua seus dados.
 
-> Passo 1. Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos do gradle (compileJava e test) ou `mvn test`.
+> Passo 1. Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos acima (`javac` e `java -ea`).
 
-> Passo 2. Submeta sua solução para o repositório
+> ⚠️ **Importante:** Os comandos abaixo devem ser executados no **diretório pai** do projeto, ou seja, no diretório anterior ao diretório `pp2-20262/`.
 
-  * `git pull`
-  * `git commit -m "entregando a prova 1"`
-  * `git push origin main`
+> Passo 2. Gere o arquivo compactado da sua solução:
+
+```bash
+tar zcvf nome-sobrenome-matricula.tar.gz pp2-20262/
+```
+
+> Passo 3. Confira se o tar foi gerado corretamente, listando os arquivos que estão dentro dele (sem extrair):
+
+```bash
+tar tzvf nome-sobrenome-matricula.tar.gz
+```
+
+> Confira se a listagem mostra o diretório `pp2-20262/` com todo o seu conteúdo (README.md, src/, etc). Se a lista vier vazia ou incompleta, o arquivo foi gerado errado e sua prova não será corrigida.
+
+> Passo 4. Submeta sua solução:
+
+```bash
+bash pp2-20262/submit-answer.sh pp2 nome-sobrenome-matricula.tar.gz
+```
+
+Importante: a senha é `leda`
 
 ## Importante
 
-* A correção da prova não é automática. Os testes que são executados quando você faz push são apenas testes de sanidade.
+* A correção da prova não é automática. Os testes que são executados quando você roda localmente são apenas testes de sanidade.
 
 * Vou considerar sempre a última submissão antes do deadline final. 
 
