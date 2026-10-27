@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = 'Main'
+}
+
+run {
+    standardInput = System.in
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+}
